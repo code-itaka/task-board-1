@@ -1,0 +1,80 @@
+/* ================================
+   🌑 Basic page styles
+   ================================ */
+   body {
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  
+  /* ================================
+     🧱 Card grid layout
+     ================================ */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  
+  /* ================================
+     📦 Card styles
+     ================================ */
+  .card {
+    background: #1e1e1e;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+  }
+  
+  
+  /* ================================
+     🏷️ Card content styles
+     ================================ */
+  .title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #00ffcc;
+  }
+  
+  .description {
+    font-size: 0.95em;
+    margin-bottom: 10px;
+    color: #cccccc;
+  }
+  
+  .reward {
+    font-weight: bold;
+    color: #ffd700;
+  }
+  
+  
+  /* ================================
+     🔄 Drag & Drop (SortableJS) styles
+     ================================ */
+  .sortable-ghost {
+    opacity: 0.3;
+    transform: scale(1.05);
+    background-color: #333;
+  }
+  
+  .sortable-chosen {
+    box-shadow: 0 0 15px #00ffcc;
+    opacity: 1;
+  }
+  
