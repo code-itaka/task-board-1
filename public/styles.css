@@ -78,3 +78,23 @@
     opacity: 1;
   }
   
+  .add-task {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: #00ffaa;
+    cursor: pointer;
+    border: 2px dashed #00ffaa;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .add-task:hover {
+    background-color: #1e1e1e;
+    transform: scale(1.05);
+  }
+  
+  .plus {
+    user-select: none;
+  }
